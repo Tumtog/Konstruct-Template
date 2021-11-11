@@ -1,0 +1,177 @@
+<!-- "<p></p>" тег абзаца. что бы "<span></span>" внутри "<p></p>" был виден на стрнице к нему подключаются CSS свойства.-->
+<!--"span" строчный тег для текста. внутри строчных тегов вроде "<span></span>" нельзя помещать "<p></p>", "<h1></h1>"-"<h6></h6>", "<div></div>". А внутри блочных тегов можно помещать другие строчные и блочные теги.-->
+<!--"<a href=""></a>" тег ссылки с атрибутом "href".  в содержании атрибута "href" должна быть ссылка на другую html страницу, сайт или путь к картинке.-->
+<!--атрибут "target" со значением "blank" означают что содержимое атрибута "href" откроется в новой вкладке браузера-->
+<!--"<ol></ol>" блочный тег для упорядоченого списка, "<ul></ul>" блочный тег для неупорядоченого списка. каждый елемент списках заключаются в тег "<li></li>"-->
+<!--"<br>" тег для переноса текста на новую строку.ставится перед словом которое будет на новой строке. не имеет закрывающего елемента-->
+<!DOCTYPE html><!--говорит брааузеру какой это тип файла-->
+<html lang= "ru"><!--обозначает начало html разметки и говорит браузеру об используемых на странице языках-->
+<head><!--тег для хранения НЕ отображаемой на странице технической информации-->
+	<title>konstruct-template</title><!--текст в этом теге отображается в названии окна/вкладки браузера-->
+	<meta charset="utf-8"><!--кодировка/версия языка файла-->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+	<body>
+<!-- первый экран -->
+		<div class="first-screen">
+			<div class="first-screen__content _container">
+				<div class="first-screen__loggo">
+					<img src="img/logo-white.png" alt="logo-white.png">
+				</div>
+				<div class="first-screen__text">
+					<h1>PARTNER WITH KONSTrUCT</h1>
+					<p>An award-winning construction management firm</p>
+				</div>
+				<div class="first-screen__pointer">
+					<p>SCROLL DOWN</p>
+				</div>
+			</div>
+		</div>
+<!-- первый экран -->
+<!-- меню -->
+		<div class="menu__container _container">
+			<div class="menu__logo">
+				<img src="img/logo-black.png" alt="logo-black.png">
+			</div>
+			<nav class="menu__nav">
+				<a class="menu__nav_item" href="#">HOME</a>
+				<a class="menu__nav_item" href="#">ABOUT</a>
+				<a class="menu__nav_item" href="#">SERVICES</a>
+				<a class="menu__nav_item" href="#">WORK</a>
+				<a class="menu__nav_item" href="#">CONTACT</a>
+			</nav>
+		</div>
+<!-- меню -->
+<!-- наша история -->
+		<div class="our-story__container _container">
+			<div class="our-story__title">
+				<h3>our story</h3>
+				<p></p>
+			</div>
+			<div class="our-story__body">
+				<div class="our-story__body__text">
+					<p class="lable">Founded in 2011 by John Mathew Smith, <span>Konstruct</span> has become the number one construction management firm</p>
+					<p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+				</div>
+				<div class="our-story__body__cards">
+					<div class="our-story__body__cards_item">
+						<p>we<br>plan</p>
+						<img src="img/card-1.png" alt="card-1.png">
+					</div>
+					<div class="our-story__body__cards_item">
+						<p>we<br>manage</p>
+						<img src="img/card-2.png" alt="card-2.png">
+					</div>
+					<div class="our-story__body__cards_item">
+						<p>we<br>build</p>
+						<img src="img/card-3.png" alt="card-3.png">
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- наша история -->	
+<!-- НАШИ ВОЗМОЖНОСТИ -->
+		<div class="capabilities__container _container">
+			<div class="capabilities__head">
+				<div class="title__container">
+					<h3>our capabilities</h3>
+					<p class="line"></p>
+				</div>
+				<div class="capabilities__head_text-btn">
+					<p class="capabilities__head_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+					<a class="button" href="#">all services</a>
+				</div>
+			</div>
+			<div class="capabilities__cards__container">
+				<div class="capabilities__cards_item">
+					<img src="img/icons/capabilities-card-1.jpg" alt="1.svg">
+					<p class="label">project and construction management</p>
+					<p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+				</div>
+				<div class="capabilities__cards_item">
+					<img src="img/icons/capabilities-card-2.jpg" alt="2.svg">
+					<p class="label">structure audit and maintenance</p>
+					<p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+				</div>
+				<div class="capabilities__cards_item">
+					<img src="img/icons/capabilities-card-3.jpg" alt="3.svg">
+					<p class="label">factory construction and modeling</p>
+					<p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+				</div>
+			</div>
+		</div>
+<!-- НАШИ ВОЗМОЖНОСТИ -->
+<!-- GET IN TOUCH CTA -->
+		<div class="Want-to-build__bg-block">
+			<div class="Want-to-build__content _container">
+				<div class="Want-to-build__content_title">
+					<p>Want to build something amazing?</p>
+				</div>
+				<div class="Want-to-build__content_button">
+					<a class="button" href="#">get in touch</a>
+				</div>
+			</div>
+		</div>
+<!-- GET IN TOUCH CTA -->
+<!-- Signup -->
+		<div class="Signup__container">
+			<div class="Signup__content _container">
+				<div class="Signup__content_text">
+					<p>Newsletter Signup</p>
+				</div>
+				<form>
+					<input placeholder="est@youremail.com" type="email" requaried>
+					<button class="button">signup</button>
+				</form>
+			</div>
+		</div>
+<!-- Signup -->
+	</body>
+<!-- footer -->
+	<footer>
+		<div class="footer__container _container">
+			<div class="footer__logo">
+				<p class="footer__logo_lable">company</p>
+				<a class="footer__logo_logo" href="#">
+					<img src="img/logo-white.png" alt="logo-white.png">
+				</a>
+				<p class="footer__logo_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+			</div>
+			<nav class="footer__menu">
+				<p>links</p>
+				<ul class="footer__menu_list">
+					<a href="#"><li>home</li></a>
+					<a href="#"><li>about</li></a>
+					<a href="#"><li>services</li></a>
+					<a href="#"><li>projects</li></a>
+					<a href="#"><li>contact us</li></a>
+				</ul>
+				<ul class="footer__menu_list">
+					<a href="#"><li>faq</li></a>
+					<a href="#"><li>terms</li></a>
+					<a href="#"><li>careers</li></a>
+				</ul>
+				<ul class="footer__menu_list">
+					<a href="#"><li>blog</li></a>
+					<a href="#"><li>partners</li></a>
+					<a href="#"><li>news</li></a>
+				</ul>
+			</nav>
+			<div class="footer__contacts">
+				<p class="footer__contacts_lable">contact us</p>
+				<p>213 Baker Street Oriel City Kounty 7000 KNW, Kountry Name</p>
+				<a class="footer__contacts_phone" href="#">+23 994 233 4022</a>
+				<a class="footer__contacts_email" href="#">info@konstruct.com</a>
+			</div>
+			<div class="footer__socials">
+				<a href="#"><img src="img/icons/fb.png" alt="fb.png"></a>
+				<a href="#"><img src="img/icons/twt.png" alt="twt.png"></a>
+				<a href="#"><img src="img/icons/google.png" alt="google.png"></a>
+			</div>
+		</div>
+		<div class="copyrights">
+			<p>© 2017 Konstruct Inc. Designed by Jane Kathryn Teo</p>
+		</div>
+	</footer>
+<!-- footer -->
+</html>
